@@ -25,6 +25,11 @@ app.use(morgan("combined")); // Allows morgan to intercept and log all HTTP requ
 app.use(express.json()); // Required so AJAX request JSON data payload can be parsed and saved into request.body
 app.use(express.static("./public")); // Intercepts all HTTP requests that match files inside /public
 
+// ROUTER SETUP
+app.use("/api/auth", authRouter); // Redirects all calls to /api/user to userRouter.
+app.use("/api/user", userRouter); // Redirects all calls to /api/user to userRouter.
+//app.use('/api/note', noteRouter); // Redirects all calls to /api/note to noteRouter.
+
 // In case we make a HTTP request that is unhandled by our Express server, we return a 404 status code and the message "Not Found."
 app.use("*", function(req, res) {
   res.status(HTTP_STATUS_CODES.NOT_FOUND).json({ error: "Not Found." });
