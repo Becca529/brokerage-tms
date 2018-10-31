@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: qRielGhkCCXQXpohfrItp0aQ1MK01YBpBbI+ZLmz2F2g1rTmiyUQNxMsmOzQJrbVCng6sJKKpyErvt8t1Bdk2zUZ4aXujxeGTZYbU9knBFMatR3DStI4+5SjVqi25im5PSJ1zk+/jF11vmwKRNNMv9yJVagMdwS2bPYXBsmMctDU0QjJiu+iMbCEL9NTisz5DboPr6dJpZ01zAv5S2oqbvC0AnXXScb5LDndhH/HOMjN4dpbqOtNaVS7SyoX5G7Au+K47StBsBB44rI37OtZDTqV3LwXnSzhXHuuU09jdsGKZjeT5gDqGhqVu+piIgx+lx6lCg+siKaB3SE8l9WYOf/UnH1XtOOWH9anuKbX8EGh8npjJz+qR6tOjo/W9i3nvjEE3+Mors8TTeryJdBbce9sN0IYxoHb0li21CyYQBDxxGCE23k7nug+15wUPtVKAWpTZaq6SjqewOA0ZuGyd/thOn9dwsJAm0noVeK99gGZkwAY3ty9rCQfxlBX+faGnrNbDlBeNzgIeiCON+DW3iMsLuMqAnyEmSLZ9DKjX7k1nURdYXKa6/MVKub9XYjk9qBt3oTgss3Blo9YkrqWRLiYsHlDKKPmneQuS91o7yK+VPui6HixDj9g2YhqWIO9GuygPe/Zh7NsLFoW1aw1zrwtgbANkbgQKunlstTiDYw=
+  app: afternoon-mesa-75350
+  on:
+    repo: Becca529/brokerage-tms
